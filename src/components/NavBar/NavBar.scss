@@ -1,0 +1,18 @@
+.navBar{
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 10px 20px;
+
+ul{
+    list-style: none;
+    li{
+        gap: 0.5rem;
+        text-align: end;
+    button{
+        font-family:Verdana, Geneva, Tahoma, sans-serif}
+        border: 0px;
+        padding: 0.3rem;
+}
+}
+}
