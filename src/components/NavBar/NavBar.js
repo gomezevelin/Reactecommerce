@@ -3,7 +3,7 @@ import './NavBar.scss';
 const NavBar = ()=>{
     return(
         <div className='navBar'>
-            <h1>Skulls and Devils</h1>
+            <img src='./assets/logo.png' className='logoNav' />
             <ul>
                 <li><button>Home</button></li>
                 <li><button>Productos</button></li>
