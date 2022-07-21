@@ -1,4 +1,7 @@
+import CardWidget from '../CartWidget/CartWidget';
 import './NavBar.scss';
+
+
 
 const NavBar = ()=>{
     return(
@@ -8,7 +11,7 @@ const NavBar = ()=>{
                 <li><button>Home</button></li>
                 <li><button>Productos</button></li>
                 <li><button>Contacto</button></li>
-                <li><button>Carrito</button></li>
+                <li><button><CardWidget/></button></li>
             </ul>
         </div>    
     )
