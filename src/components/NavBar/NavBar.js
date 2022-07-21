@@ -1,4 +1,4 @@
-import CardWidget from '../CartWidget/CartWidget';
+import CardWidget from './CartWidget';
 import './NavBar.scss';
 
 
