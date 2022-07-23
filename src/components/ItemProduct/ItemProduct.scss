@@ -5,16 +5,7 @@
     flex-direction: column;
     text-align: center;
     box-shadow: 1px 1px 5px #B78E80;
-    .itemCount{
-        display: flex;
-        justify-content: center;
-        gap: 0.3rem;
-
-        button{
-            width: 20px;
-            height: 30px;
-        }
-    }
+    
     span{
         color: #BC8F8F;
         font-weight: 700;
