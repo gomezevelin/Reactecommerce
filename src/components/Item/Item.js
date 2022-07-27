@@ -1,4 +1,4 @@
-import './ItemProduct.scss'
+import './Item.scss'
 import ItemCount from '../ItemCount/ItemCount'
 
 
@@ -12,7 +12,7 @@ const ItemProduct = ({data}) => {
             <p>{title}</p>
             <span>${price}</span>
             <ItemCount stock={stock}/>
-            <button>Agregar Carrito</button>
+            <button>Comprar</button>
         </div>
     )  
 }
