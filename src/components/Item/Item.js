@@ -7,13 +7,15 @@ const ItemProduct = ({data}) => {
     const {title,price,img,stock} = data
     
     return(
-        <div className='itemProduct'>
-            <img className='imgProduct' src={img} alt="Imagen Producto"/>
-            <p>{title}</p>
-            <span>${price}</span>
+    
+        <div  key= "div" className='itemProduct'>
+            <img className='imgProduct' src={img} alt="Imagen Producto" key={img}/>
+            <p key={title}>{title}</p>
+            <span key={price}>${price}</span>
             <ItemCount stock={stock}/>
-            <button>Comprar</button>
+            <button key="button">Comprar</button>
         </div>
+        
     )  
 }
 
