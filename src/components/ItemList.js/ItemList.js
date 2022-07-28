@@ -4,7 +4,8 @@ const ItemList = ({dataProducts}) => {
      
     return(
     <div className='listProducts'>
-        {dataProducts.map((products)=><ItemProduct key={products.id} data={products}/>)}
+        {dataProducts.map((products)=>{
+            return(<ItemProduct key={products.id} data={products}/>)})}
     </div>)
 }
 

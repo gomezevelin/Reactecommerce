@@ -4,16 +4,16 @@ import ItemCount from '../ItemCount/ItemCount'
 
 const ItemProduct = ({data}) => {
     
-    const {title,price,img,stock} = data
+    const {id,title,price,img,stock} = data
     
     return(
     
-        <div  key= "div" className='itemProduct'>
-            <img className='imgProduct' src={img} alt="Imagen Producto" key={img}/>
-            <p key={title}>{title}</p>
-            <span key={price}>${price}</span>
+        <div  key= {id} className='itemProduct'>
+            <img className='imgProduct' src={img} alt="Imagen Producto"/>
+            <p>{title}</p>
+            <span>${price}</span>
             <ItemCount stock={stock}/>
-            <button key="button">Comprar</button>
+            <button>Comprar</button>
         </div>
         
     )  
