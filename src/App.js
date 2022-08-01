@@ -13,7 +13,7 @@ function App() {
         <NavBar/>
       </div>
       <div className='mainContainer'>
-        <ItemDetailContainer cathegory="Velas"/>
+        <ItemDetailContainer cathegory="Velas de Soja"/>
       </div>
     </div>
     

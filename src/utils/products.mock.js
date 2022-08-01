@@ -4,6 +4,7 @@ const products = [{
     price:1500,
     img:'/assets/vela1.jpg',
     stock: 8,
+    description:"Vela de soja en recipiente de vidrio con tapa de bambo. Contiene 80 GRS de cera de soja "
 },
 {   id:2,
     title:"Vela Mara",

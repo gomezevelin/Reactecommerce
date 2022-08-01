@@ -1,10 +1,22 @@
 .itemCount{
     display: flex;
     justify-content: center;
-    gap: 0.3rem;
+    align-items: center;
+    align-items: center;
+    gap: 1rem;
+    font-size: 25px;
+    
 
     button{
-        width: 20px;
-        height: 30px;
+        width: 30px;
+        height: 40px;
+        background-color: #BC8F8F;
+        border-style:none ;
+        -webkit-box-shadow: 6px 6px 23px -6px rgba(188,143,143,0.75);
+        -moz-box-shadow: 6px 6px 23px -6px rgba(188,143,143,0.75);
+        box-shadow: 6px 6px 23px -6px rgba(188,143,143,0.75);
+        font-size: 20px;
+        padding: 0.5rem;
+        color: #F5EEE8;
     }
 }

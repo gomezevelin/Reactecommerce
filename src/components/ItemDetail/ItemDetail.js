@@ -1,22 +1,19 @@
 import './ItemDetail.scss'
+import ItemCount from '../ItemCount/ItemCount'
 
 const ItemDetail = ({dataItem}) =>{
     const {id,title,price,img,stock,description} = dataItem
 
     return(
-        <div className='ItemDetailDiv'>
+        <div className='ItemDetailContainer'>
         <div className='itemDetailDivImg'><img className='itemDetailImg' src={img} alt='Vela'></img></div>
-        <div>
+        <div className="ItemDetailDiv">
             <h2>{title}</h2>
-            <span>{price}</span>
+            <span className='spanDetailPrice'>${price}</span>
             <p>Envio gratis a partir de $10000</p>
             <p>{description}</p>
-            <div className='countDiv'>
-                <button>-</button>
-                <p>1</p>
-                <button>+</button>
-            </div>
-            <button>Agregar al carrito</button>
+            <ItemCount stock={stock}/>
+            <button className='botonAgregarCarrito'>Agregar al carrito</button>
         </div>
         </div>
     )
