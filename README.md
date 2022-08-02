@@ -16,10 +16,15 @@ Se inicia con
 ## Dependencias
 
 Se utilizan todas las dependecias utilizadas en clase.
-Se agrega Favicon.
-para instalarlo se corre el comando:
+Se agrega Favicon y Bootstrap React.
+Para instalarlos se corrieron los siguientes comandos:
 
 `npm i favicons`
+`npm install react-bootstrap bootstrap`
+
+Además se agregó en index.css para incorporar los estilos
+
+`@import url('bootstrap/dist/css/bootstrap.min.css');`
 
 ## Licencia
 
