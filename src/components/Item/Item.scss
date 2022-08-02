@@ -1,3 +1,10 @@
+.cartLink{
+    text-decoration: none;
+    color: black;
+    .cartLink:active{
+        color: aqua;
+    }
+}
 .itemProduct{
     width: 40%;
     height: 50%;
@@ -5,6 +12,17 @@
     flex-direction: column;
     text-align: center;
     box-shadow: 1px 1px 5px #B78E80;
+    text-decoration: none;
+
+    a:-webkit-any-link {
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+    .itemProduct:visited{
+        text-decoration: none;
+    }
+
     
     span{
         color: #BC8F8F;

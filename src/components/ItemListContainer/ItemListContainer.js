@@ -6,6 +6,9 @@ import {useState, useEffect} from 'react'
 const ListContainer = ({section}) => {
     
     const [ListProducts, setListProducts] = useState([])
+    /*const {category} = useParams()
+    const filterByCategory = products.filter((products) => products.category === categoryid)*/
+    
 
     const getProducts = new Promise((resolve,reject)=>{
         setTimeout(()=>{
@@ -19,7 +22,7 @@ const ListContainer = ({section}) => {
         setListProducts(res)})
         .catch((error)=>{
         console.log("hubo un problema")})
-    },[])
+    },[])// eslint-disable-line react-hooks/exhaustive-deps
     
     
    

@@ -1,8 +1,11 @@
 import './ItemDetail.scss'
 import ItemCount from '../ItemCount/ItemCount'
+import { useParams } from 'react-router-dom'
 
 const ItemDetail = ({dataItem}) =>{
-    const {id,title,price,img,stock,description} = dataItem
+    const {title,price,img,stock,description} = dataItem
+    const {id}= useParams()
+    console.log(useParams)
 
     return(
         <div className='ItemDetailContainer'>
