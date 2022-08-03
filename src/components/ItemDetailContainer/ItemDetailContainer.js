@@ -27,9 +27,9 @@ const ItemDetailContainer = ({category}) =>{
 
             return (
             <div className="containerItemDetail">
+                <h1>{category}</h1> 
                 {Object.keys(listDetail).length > 0 && <ItemDetail dataItem={listDetail}/>}
                 {Object.keys(listDetail).length === 0  && "Loading"}
-                <h1>{category}</h1> 
             </div>
         )
     }
