@@ -1,13 +1,13 @@
 
 import './App.scss';
 /*import ListContainer from './components/ItemListContainer/ItemListContainer';*/
-import NavBar from './components/NavBar/NavBar';
+import NavBar1 from './components/NavBar/NavBar';
 import {BrowserRouter,Routes,Route} from "react-router-dom"
 import Home from './pages/Home';
 import Contact from './pages/Contact';
-import Detail from './pages/Detail';
 import ProductsComplete from './pages/Productos';
 import Checkout from './pages/Checkout';
+import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
 
 function App() {
   
@@ -15,15 +15,14 @@ function App() {
     <BrowserRouter>
     
       <div className="divNav">
-        <NavBar/>
+        <NavBar1/>
       </div>
         <Routes>
           <Route path='/' element={<Home/>}></Route>
           <Route path='/products' element={<ProductsComplete/>}></Route>
           <Route path='/contact' element={<Contact/>}></Route>
           <Route path='/checkout' element={<Checkout/>}></Route>
-          <Route path='/products/:category' element={<h1>Categorias</h1>}></Route>
-          <Route path='/products/:category/:id' element={<Detail cathegory="Velas"/>}></Route>
+          <Route path='/items/:id' element={<ItemDetailContainer/>}></Route>
           <Route path='*' element= {<h1>Error 404 - Página no encontrada</h1>}></Route>
           
         </Routes>

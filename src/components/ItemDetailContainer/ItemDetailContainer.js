@@ -1,34 +1,37 @@
 import ItemDetail from "../ItemDetail/ItemDetail"
 import "./ItemDetailContainer.scss"
-import { useEffect, useState, useParams } from "react"
-import itemDetailProduct from "../../utils/products.mock"
+import { useEffect, useState } from "react"
+import { useParams } from "react-router-dom"
+import products from "../../utils/products.mock"
 
 const ItemDetailContainer = ({category}) =>{
-      const [ListDetail, setListDetail] = useState([])
-      /*const {id} = useParams ()*/
+      const [listDetail, setListDetail] = useState({})
+      const {id} = useParams ()
     
-        const getProducts = new Promise((resolve,reject)=>{
-            setTimeout(()=>{
-                resolve(itemDetailProduct[0])
+    const getProducts = (id) => new Promise((resolve,reject) =>{
+        setTimeout(()=>{
+            const productDetail = products.find (product =>
+                product.id === parseInt(id)
+            )
+            resolve(productDetail)
             },2000)
             
         })
         useEffect(()=>{
-        getProducts
+        getProducts(id)
             .then((res)=>{
             setListDetail(res)})
             .catch((error)=>{
             console.log("hubo un problema")})
-        },[])// eslint-disable-line react-hooks/exhaustive-deps
+            },[id])
 
-        return (
+            return (
             <div className="containerItemDetail">
+                {Object.keys(listDetail).length > 0 && <ItemDetail dataItem={listDetail}/>}
+                {Object.keys(listDetail).length === 0  && "Loading"}
                 <h1>{category}</h1> 
-                <ItemDetail dataItem={ListDetail}/>
             </div>
         )
-       
     }
     
-
 export default ItemDetailContainer

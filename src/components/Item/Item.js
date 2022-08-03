@@ -8,7 +8,7 @@ const ItemProduct = ({data}) => {
     const {id,title,price,img,stock} = data
     
     return(
-        <Link className='cartLink' to={`/products/${id}`}>
+        <Link className='cartLink' to={`/items/${id}`}>
         <div  key= {id} className='itemProduct'>
             <img className='imgProduct' src={img} alt="Imagen Producto"/>
             <p>{title}</p>
