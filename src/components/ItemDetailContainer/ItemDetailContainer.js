@@ -5,9 +5,10 @@ import { useParams } from "react-router-dom"
 import products from "../../utils/products.mock"
 
 const ItemDetailContainer = ({category}) =>{
-      const [listDetail, setListDetail] = useState({})
-      const {id} = useParams ()
+    const [listDetail, setListDetail] = useState({})
     
+    const {id} = useParams ()
+
     const getProducts = (id) => new Promise((resolve,reject) =>{
         setTimeout(()=>{
             const productDetail = products.find (product =>
@@ -24,7 +25,7 @@ const ItemDetailContainer = ({category}) =>{
             .catch((error)=>{
             console.log("hubo un problema")})
             },[id])
-
+            
             return (
             <div className="containerItemDetail">
                 <h1>{category}</h1> 

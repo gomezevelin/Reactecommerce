@@ -5,7 +5,7 @@ const products = [{
     img:'/assets/vela1.jpg',
     stock: 8,
     description:"Vela de soja en recipiente de vidrio con tapa de bambo. Contiene 80 GRS de cera de soja ",
-    cathegory:"Velas de Soja",
+    category:"Velas de Soja",
     sale:false
 },
 {   id:2,
@@ -14,7 +14,7 @@ const products = [{
     img:'/assets/velaAlma.jpg',
     stock:3,
     description:"Vela de soja en recipiente de vidrio redondeado",
-    cathegory:"Velas de Soja",
+    category:"Velas de Soja",
     sale:false
 },
 {   id:3,
@@ -23,7 +23,7 @@ const products = [{
     img:'/assets/velaEsperanza.jpg',
     stock:7,
     description:"Vela de soja en recipiente de vidrio con tapa incluida.",
-    cathegory:"Velas de Soja",
+    category:"Velas de Soja",
     sale:false
 },
 {   id:4,
@@ -32,7 +32,7 @@ const products = [{
     img:'/assets/velaMilagros.jpg',
     stock:4,
     description:"Recipiente de 1 litro cónico de vidrio. Incluye 1,500 kg de vela de soja",
-    cathegory:"Velas de Soja",
+    category:"Velas de Soja",
     sale:false
 },
 {
@@ -42,7 +42,7 @@ const products = [{
     img:'/assets/velaMaxima.jpg',
     stock:6,
     description:"Vela de soja en recipiente de ceramica. Medidas: 9.5 x 6 cm. Peso 330 gr",
-    cathegory:"Velas de Soja",
+    category:"Velas de Soja",
     sale:false
 },
 {
@@ -52,7 +52,7 @@ const products = [{
     img:'/assets/velaBuble.jpg',
     stock:8,
     description:"Vela cúbica hecha con circunferencias. Conultar disponibilidad de colores",
-    cathegory:"Velas de Soja",
+    category:"Velas de Soja",
     sale:false
 },
 {
@@ -62,7 +62,7 @@ const products = [{
     img:'/assets/macetaIsabel.jpg',
     stock:8,
     description:"Maceta de ceramica con drenaje. Medidas: 11 x 11 x 10 cm ",
-    cathegory:"Macetas",
+    category:"Macetas",
     sale:false
 },
 {
@@ -72,7 +72,7 @@ const products = [{
     img:'/assets/macetaSolBrillante.jpg',
     stock:7,
     description:"Maceta de cerámica con textura en relieve trabajada a mano",
-    cathegory:"Macetas",
+    category:"Macetas",
     sale:false
 },
 {
@@ -82,7 +82,7 @@ const products = [{
     img:'/assets/macetaRosaViejo.jpg',
     stock:10,
     description:"Maceta de cerámica con textura en relieve trabajada a mano",
-    cathegory:"Macetas",
+    category:"Macetas",
     sale:false
 },
 {
@@ -92,7 +92,7 @@ const products = [{
     img:'/assets/macetaCalabaza.jpg',
     stock:4,
     description:"Maceta de cerámica con textura en relieve trabajada a mano, ahuecada y profunda",
-    cathegory:"Macetas",
+    category:"Macetas",
     sale:false
 },
 {
@@ -102,7 +102,7 @@ const products = [{
     img:'/assets/macetaCielo.jpg',
     stock:9,
     description:"Maceta de cerámica con textura en relieve trabajada a mano y con distintivo en borde.",
-    cathegory:"Macetas",
+    category:"Macetas",
     sale:false
 },
 {
@@ -112,7 +112,7 @@ const products = [{
     img:'/assets/macetaPanal.jpg',
     stock:12,
     description:"Maceta de ceramica con drenaje. Trabajada a mano .Medidas: 9 x 9 x 10 ",
-    cathegory:"Macetas",
+    category:"Macetas",
     sale:false
 },
 {
@@ -122,7 +122,7 @@ const products = [{
     img:'/assets/macetaGeo.jpg',
     stock:2,
     description:"Maceta geometrica a medida.",
-    cathegory:"Macetas",
+    category:"Macetas",
     sale:false
 },
 {
@@ -132,7 +132,7 @@ const products = [{
     img:'/assets/farolesMonique.jpg',
     stock:15,
     description:"Faroles natural wood mas detalle de cúpula labrada. Se recomienda utilizarlo para interiores. Contiene lugar de guardado, ideal para velas. Medidas: (Chico)15, 5 cm x 41 cm - (Mediano) 24 x 70 cm - (Grande: 32 x 103 cm)",
-    cathegory:"Faroles",
+    category:"Faroles",
     sale:false
 },
 {
@@ -142,7 +142,7 @@ const products = [{
     img:'/assets/farolAlison.jpg',
     stock:20,
     description:"Farol combinado en metal y madera. Ideal para interiores o galerias. Altura:(Chico) 34 cm, (Mediano) 53 cm, (Grande) 73 cm",
-    cathegory:"Faroles",
+    category:"Faroles",
     sale:false
 },
 {

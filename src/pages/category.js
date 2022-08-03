@@ -1,15 +1,14 @@
 import ItemListContainer from "../components/ItemListContainer/ItemListContainer"
 
-const ProductsComplete = () =>{
+const Category = () =>{
     return(
         <div className='container' >
             <div className='mainContainer'>
-                <ItemListContainer section="Productos"/>
+            <ItemListContainer categoryParam="Velas de Soja"/>
             </div>
         </div>
-
         
     )
 }
 
-export default ProductsComplete
+export default Category

@@ -2,19 +2,24 @@ import './ItemListContainer.scss'
 import ItemList from '../ItemList.js/ItemList'
 import products from '../../utils/products.mock'
 import {useState, useEffect} from 'react'
+import { useParams } from 'react-router-dom'
 
-const ListContainer = ({section}) => {
+const ListContainer = ({section, categoryParam}) => {
     
     const [ListProducts, setListProducts] = useState([])
-    /*const {category} = useParams()
-    const filterByCategory = products.filter((products) => products.category === categoryid)*/
+    const {category} = useParams()
+    const filterByCategory = products.filter(product => product.category === category)
     
 
     const getProducts = new Promise((resolve,reject)=>{
         setTimeout(()=>{
-            resolve(products)
+    
+            if (categoryParam === ""){
+                resolve (products)
+            }else{ 
+                resolve(filterByCategory)
+            }
         },2000)
-        
     })
     useEffect(()=>{
     getProducts
@@ -22,7 +27,7 @@ const ListContainer = ({section}) => {
         setListProducts(res)})
         .catch((error)=>{
         console.log("hubo un problema")})
-    },[])// eslint-disable-line react-hooks/exhaustive-deps
+    },[filterByCategory])// eslint-disable-line react-hooks/exhaustive-deps
     
     
    
