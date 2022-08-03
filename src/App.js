@@ -7,6 +7,7 @@ import Home from './pages/Home';
 import Contact from './pages/Contact';
 import ProductsComplete from './pages/Productos';
 import Checkout from './pages/Checkout';
+import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
 
 function App() {
@@ -19,7 +20,7 @@ function App() {
       </div>
         <Routes>
           <Route path='/' element={<Home/>}></Route>
-          <Route path='/products' element={<ProductsComplete/>}></Route>
+          <Route path='/products' element={<ItemListContainer section="Productos"/>}></Route>
           <Route path='/contact' element={<Contact/>}></Route>
           <Route path='/checkout' element={<Checkout/>}></Route>
           <Route path='/items/:id' element={<ItemDetailContainer/>}></Route>

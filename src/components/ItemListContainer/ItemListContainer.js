@@ -4,7 +4,7 @@ import products from '../../utils/products.mock'
 import {useState, useEffect} from 'react'
 import { useParams } from 'react-router-dom'
 
-const ListContainer = ({section, categoryParam}) => {
+const ItemListContainer = ({section, categoryParam}) => {
     
     const [ListProducts, setListProducts] = useState([])
     const {category} = useParams()
@@ -39,5 +39,5 @@ const ListContainer = ({section, categoryParam}) => {
     )
 }
 
-export default ListContainer
+export default ItemListContainer
 
