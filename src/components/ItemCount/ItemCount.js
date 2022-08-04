@@ -1,7 +1,8 @@
- import './ItemCount.scss'
- import {useState} from 'react'           
-            
-  const ItemCount = ({stock}) => {
+import './ItemCount.scss'
+import {useState} from 'react'           
+
+const ItemCount = ({stock}) => {
+     
      let stockVirtual = stock
      let disable= false
      const [count, setCount] = useState(1)
@@ -14,6 +15,6 @@
                <button onClick={addProduct} disabled={disable}>+</button>
           </div>
      )
-   }         
-        
+}         
+
 export default ItemCount

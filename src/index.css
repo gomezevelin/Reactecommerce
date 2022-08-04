@@ -1,4 +1,6 @@
 @import url('bootstrap/dist/css/bootstrap.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Cambay&family=Darker+Grotesque:wght@400;600&family=Montserrat+Alternates:wght@500&display=swap');
+
 
 body {
   margin: 0;
@@ -7,6 +9,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: 'Cambay', sans-serif;
 }
 
 code {

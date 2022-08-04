@@ -12,9 +12,10 @@ function ButtonDrop() {
       <Dropdown.Toggle split variant="dark" id="dropdown-split-basic" />
 
       <Dropdown.Menu>
-        <Dropdown.Item as={Link} to="" href="#/action-1">Velas de Soja</Dropdown.Item>
-        <Dropdown.Item as={Link} to="" href="#/action-2">Portavelas</Dropdown.Item>
-        <Dropdown.Item as={Link} to="" href="#/action-3">Macetas</Dropdown.Item>
+        <Dropdown.Item as={Link} to="products/velas_soja" href="#/action-1">Velas de Soja</Dropdown.Item>
+        <Dropdown.Item as={Link} to="products/portavelas" href="#/action-2">Portavelas</Dropdown.Item>
+        <Dropdown.Item as={Link} to="products/macetas" href="#/action-3">Macetas</Dropdown.Item>
+        <Dropdown.Item as={Link} to="products/faroles" href="#/action-4">Faroles</Dropdown.Item>
       </Dropdown.Menu>
     </Dropdown>
   );

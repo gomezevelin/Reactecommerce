@@ -8,5 +8,4 @@ const CardWidget = () => {
         </div>
     )
 }
-
 export default CardWidget

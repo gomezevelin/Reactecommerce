@@ -11,12 +11,9 @@ const ItemDetailContainer = ({category}) =>{
 
     const getProducts = (id) => new Promise((resolve,reject) =>{
         setTimeout(()=>{
-            const productDetail = products.find (product =>
-                product.id === parseInt(id)
-            )
+            const productDetail = products.find (product => product.id === parseInt(id))
             resolve(productDetail)
             },2000)
-            
         })
         useEffect(()=>{
         getProducts(id)
@@ -27,12 +24,12 @@ const ItemDetailContainer = ({category}) =>{
             },[id])
             
             return (
-            <div className="containerItemDetail">
-                <h1>{category}</h1> 
-                {Object.keys(listDetail).length > 0 && <ItemDetail dataItem={listDetail}/>}
-                {Object.keys(listDetail).length === 0  && "Loading"}
-            </div>
-        )
-    }
-    
+                <div className="containerItemDetail">
+                    <h1>{category}</h1> 
+                    {Object.keys(listDetail).length > 0 && <ItemDetail dataItem={listDetail}/>}
+                    {Object.keys(listDetail).length === 0  && "Loading"}
+                </div>
+            )
+}
+
 export default ItemDetailContainer

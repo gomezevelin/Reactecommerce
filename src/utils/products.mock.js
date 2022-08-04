@@ -5,7 +5,7 @@ const products = [{
     img:'/assets/vela1.jpg',
     stock: 8,
     description:"Vela de soja en recipiente de vidrio con tapa de bambo. Contiene 80 GRS de cera de soja ",
-    category:"Velas de Soja",
+    category:"velas_soja",
     sale:false
 },
 {   id:2,
@@ -14,7 +14,7 @@ const products = [{
     img:'/assets/velaAlma.jpg',
     stock:3,
     description:"Vela de soja en recipiente de vidrio redondeado",
-    category:"Velas de Soja",
+    category:"velas_soja",
     sale:false
 },
 {   id:3,
@@ -23,7 +23,7 @@ const products = [{
     img:'/assets/velaEsperanza.jpg',
     stock:7,
     description:"Vela de soja en recipiente de vidrio con tapa incluida.",
-    category:"Velas de Soja",
+    category:"velas_soja",
     sale:false
 },
 {   id:4,
@@ -32,7 +32,7 @@ const products = [{
     img:'/assets/velaMilagros.jpg',
     stock:4,
     description:"Recipiente de 1 litro cónico de vidrio. Incluye 1,500 kg de vela de soja",
-    category:"Velas de Soja",
+    category:"velas_soja",
     sale:false
 },
 {
@@ -42,7 +42,7 @@ const products = [{
     img:'/assets/velaMaxima.jpg',
     stock:6,
     description:"Vela de soja en recipiente de ceramica. Medidas: 9.5 x 6 cm. Peso 330 gr",
-    category:"Velas de Soja",
+    category:"velas_soja",
     sale:false
 },
 {
@@ -52,8 +52,8 @@ const products = [{
     img:'/assets/velaBuble.jpg',
     stock:8,
     description:"Vela cúbica hecha con circunferencias. Conultar disponibilidad de colores",
-    category:"Velas de Soja",
-    sale:false
+    category:"velas_soja",
+    sale:true
 },
 {
     id:7,
@@ -62,7 +62,7 @@ const products = [{
     img:'/assets/macetaIsabel.jpg',
     stock:8,
     description:"Maceta de ceramica con drenaje. Medidas: 11 x 11 x 10 cm ",
-    category:"Macetas",
+    category:"macetas",
     sale:false
 },
 {
@@ -72,7 +72,7 @@ const products = [{
     img:'/assets/macetaSolBrillante.jpg',
     stock:7,
     description:"Maceta de cerámica con textura en relieve trabajada a mano",
-    category:"Macetas",
+    category:"macetas",
     sale:false
 },
 {
@@ -82,7 +82,7 @@ const products = [{
     img:'/assets/macetaRosaViejo.jpg',
     stock:10,
     description:"Maceta de cerámica con textura en relieve trabajada a mano",
-    category:"Macetas",
+    category:"macetas",
     sale:false
 },
 {
@@ -92,7 +92,7 @@ const products = [{
     img:'/assets/macetaCalabaza.jpg',
     stock:4,
     description:"Maceta de cerámica con textura en relieve trabajada a mano, ahuecada y profunda",
-    category:"Macetas",
+    category:"macetas",
     sale:false
 },
 {
@@ -102,8 +102,8 @@ const products = [{
     img:'/assets/macetaCielo.jpg',
     stock:9,
     description:"Maceta de cerámica con textura en relieve trabajada a mano y con distintivo en borde.",
-    category:"Macetas",
-    sale:false
+    category:"macetas",
+    sale:true
 },
 {
     id:12,
@@ -112,7 +112,7 @@ const products = [{
     img:'/assets/macetaPanal.jpg',
     stock:12,
     description:"Maceta de ceramica con drenaje. Trabajada a mano .Medidas: 9 x 9 x 10 ",
-    category:"Macetas",
+    category:"macetas",
     sale:false
 },
 {
@@ -122,7 +122,7 @@ const products = [{
     img:'/assets/macetaGeo.jpg',
     stock:2,
     description:"Maceta geometrica a medida.",
-    category:"Macetas",
+    category:"macetas",
     sale:false
 },
 {
@@ -132,7 +132,7 @@ const products = [{
     img:'/assets/farolesMonique.jpg',
     stock:15,
     description:"Faroles natural wood mas detalle de cúpula labrada. Se recomienda utilizarlo para interiores. Contiene lugar de guardado, ideal para velas. Medidas: (Chico)15, 5 cm x 41 cm - (Mediano) 24 x 70 cm - (Grande: 32 x 103 cm)",
-    category:"Faroles",
+    category:"faroles",
     sale:false
 },
 {
@@ -142,7 +142,7 @@ const products = [{
     img:'/assets/farolAlison.jpg',
     stock:20,
     description:"Farol combinado en metal y madera. Ideal para interiores o galerias. Altura:(Chico) 34 cm, (Mediano) 53 cm, (Grande) 73 cm",
-    category:"Faroles",
+    category:"faroles",
     sale:false
 },
 {
@@ -152,7 +152,7 @@ const products = [{
     img:'/assets/farolLed.jpg',
     stock:12,
     description:"Farol de metal con labrado simple blanco. No incluye pilas. Disponible en tres tamaños. Altura:(Chico) 23 cm, (Mediano) 35 cm, (Grande) 45 cm",
-    category:"Faroles",
+    category:"faroles",
     sale:false
 },
 {
@@ -162,8 +162,8 @@ const products = [{
     img:'/assets/farolHanoi.jpg',
     stock:15,
     description:"Farol 100% bamboo importado de la India. Incluye portavela de vidrio. Disponible en tres tamaños. Altura:(Chico) 21 cm, (Mediano) 35 cm, (Grande) 50 cm",
-    category:"Faroles",
-    sale:false
+    category:"faroles",
+    sale:true
 },
 {
     id:18,
@@ -172,7 +172,7 @@ const products = [{
     img:'/assets/farolAbril.jpg',
     stock:2,
     description:"Farol combinado en bamboo y natural wood. Ideal para interiores. Medidas: 24 x 37 cm",
-    category:"Faroles",
+    category:"faroles",
     sale:false
 },
 {
@@ -182,7 +182,7 @@ const products = [{
     img:'/assets/portavelasCristal.jpg',
     stock:10,
     description:"Metal labrado a mano. El precio es por unidad. Medidas: 11 x 43 cm ",
-    category:"Portavelas",
+    category:"portavelas",
     sale:false
 },
 {
@@ -192,7 +192,7 @@ const products = [{
     img:'/assets/portavelasCristalPlateado.jpg',
     stock:8,
     description:"Metal labrado a mano. El precio es por unidad. Medidas: 11 x 43 cm ",
-    category:"Portavelas",
+    category:"portavelas",
     sale:false
 },
 {
@@ -202,7 +202,7 @@ const products = [{
     img:'/assets/portavelasLuna.jpg',
     stock:6,
     description:"Vidrio trabajado con acuarela blanca. Medida: 15 cm ",
-    category:"Portavelas",
+    category:"portavelas",
     sale:false
 },
 {
@@ -211,8 +211,8 @@ const products = [{
     price:2800,
     img:'/assets/portavelasCatalina.jpg',
     stock:14,
-    description:"Portavelas de vidrio trabajo. Diseño exclusivo. Medidas: 12,5 X 12,5 X 13,5",
-    category:"Portavelas",
+    description:"portavelas de vidrio trabajo. Diseño exclusivo. Medidas: 12,5 X 12,5 X 13,5",
+    category:"portavelas",
     sale:false
 },
 {
@@ -222,8 +222,8 @@ const products = [{
     img:'/assets/portavelasComboCristal.jpg',
     stock:8,
     description:"Combo de portavelas en acero. Ideales para decorar el salón. El chico mide 10 x 8 cm y el grande 12 x 11 cm ",
-    category:"Portavelas",
-    sale:false
+    category:"portavelas",
+    sale:true
 },
 {
     id:24,
@@ -232,7 +232,7 @@ const products = [{
     img:'/assets/portavelasCleo.jpg',
     stock:4,
     description:"Chapa labrada a mano. Medidas: 13.5 x 17 cm ",
-    category:"Portavelas",
+    category:"portavelas",
     sale:false
 },
 ]
