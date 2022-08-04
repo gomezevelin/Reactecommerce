@@ -1,4 +1,5 @@
 import NavBar1 from './components/NavBar/NavBar';
+import './App.scss'
 import {BrowserRouter,Routes,Route} from "react-router-dom"
 import Home from './pages/Home';
 import Contact from './pages/Contact';
@@ -13,7 +14,8 @@ function App() {
       <div className="divNav">
         <NavBar1/>
       </div>
-        <Routes>
+      <div id='mainContainer'>
+      <Routes>
           <Route path='/' element={<Home/>}></Route>
           <Route path='/products' element={<ItemListContainer section="Todos los Productos"/>}></Route>
           <Route path='/products/:category' element={<ItemListContainer/>}></Route>
@@ -22,6 +24,8 @@ function App() {
           <Route path='/items/:id' element={<ItemDetailContainer/>}></Route>
           <Route path='*' element= {<h1>Error 404 - Página no encontrada</h1>}></Route>
         </Routes>
+      </div>
+        
       
     </BrowserRouter>
   );
