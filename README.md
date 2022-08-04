@@ -26,6 +26,9 @@ Además se agregó en index.css para incorporar los estilos
 
 `@import url('bootstrap/dist/css/bootstrap.min.css');`
 
+#### Obsevaciones
+Se incluye en la carpeta assets un gif que muestra la navegación del sitio
+
 ## Licencia
 
 Derechos Reservados - Evelin Gómez
