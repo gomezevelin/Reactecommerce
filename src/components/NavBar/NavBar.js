@@ -13,8 +13,7 @@ const NavBar1 = ()=>{
                 <Link to="/"><li><button>Home</button></li></Link>
                 <ButtonDrop/>
                 <Link to="/contact"><li><button>Contacto</button></li></Link>
-                <Link to="/checkout"><li><button><CardWidget/></button></li></Link>
-                
+                <Link to="/cart"><li><button><CardWidget/></button></li></Link>
             </ul>
         </div>    
     )

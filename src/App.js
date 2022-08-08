@@ -20,7 +20,7 @@ function App() {
           <Route path='/products' element={<ItemListContainer section="Todos los Productos"/>}></Route>
           <Route path='/category/:category' element={<ItemListContainer/>}></Route>
           <Route path='/contact' element={<Contact/>}></Route>
-          <Route path='/checkout' element={<Checkout/>}></Route>
+          <Route path='/cart' element={<Checkout/>}></Route>
           <Route path='/items/:id' element={<ItemDetailContainer/>}></Route>
           <Route path='*' element= {<h1>Error 404 - Página no encontrada</h1>}></Route>
         </Routes>

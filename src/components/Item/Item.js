@@ -16,8 +16,6 @@ const ItemProduct = ({data}) => {
             </Link>
             <span>${price}</span>
             <ItemCount stock={stock}/>
-            <Link className='cartLink' to={`/items/${id}`}>
-            <button>Mostrar Detalle</button></Link>
         </div>
     )  
 }

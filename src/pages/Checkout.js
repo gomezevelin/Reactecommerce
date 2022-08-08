@@ -1,6 +1,6 @@
 const Checkout = () => {
     return (
-        <h1>Carrito</h1>
+        <h1>Pagina CheckOut</h1>
     )
 }
 

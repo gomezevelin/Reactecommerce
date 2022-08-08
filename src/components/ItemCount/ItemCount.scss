@@ -8,7 +8,6 @@
     
 
     button{
-        width: 30px;
         height: 40px;
         background-color: #BC8F8F;
         border-style:none ;
@@ -19,4 +18,20 @@
         padding: 0.5rem;
         color: #F5EEE8;
     }
+}
+.botonAgregarCarrito{
+    background-color: #BC8F8F;
+    -webkit-box-shadow: 6px 6px 23px -6px rgba(188,143,143,0.75);
+    -moz-box-shadow: 6px 6px 23px -6px rgba(188,143,143,0.75);
+    box-shadow: 6px 6px 23px -6px rgba(188,143,143,0.75);
+    margin-left: 2rem;
+    font-size: 20px;
+    padding: 0.5rem;
+    color: #F5EEE8;
+    border-width: 0px;
+
+}
+.divItemCount{
+    display: flex;
+    flex-direction: column;
 }
