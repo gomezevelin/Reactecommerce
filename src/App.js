@@ -6,11 +6,11 @@ import Contact from './pages/Contact';
 import Checkout from './pages/Checkout';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
-
+import CartProvider from './Context/CartContext';
 function App() {
   return (
+    <CartProvider>
     <BrowserRouter>
-    
       <div className="divNav">
         <NavBar1/>
       </div>
@@ -24,10 +24,9 @@ function App() {
           <Route path='/items/:id' element={<ItemDetailContainer/>}></Route>
           <Route path='*' element= {<h1>Error 404 - Página no encontrada</h1>}></Route>
         </Routes>
-      </div>
-        
-      
+      </div>  
     </BrowserRouter>
+    </CartProvider>
   );
 }
 export default App;

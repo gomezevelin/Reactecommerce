@@ -1,7 +1,11 @@
 
 import ItemListContainer from "../components/ItemListContainer/ItemListContainer"
+import { useContext } from "react"
+import { CartContext } from "../Context/CartContext"
 
 const Home = () =>{
+
+    
     return(
         
             <div>
