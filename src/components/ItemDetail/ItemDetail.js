@@ -1,14 +1,12 @@
 import './ItemDetail.scss'
 import ItemCount from '../ItemCount/ItemCount'
-import { Link, useParams } from 'react-router-dom'
+import { Link} from 'react-router-dom'
 import { useState, useContext } from 'react'
 import { CartContext } from '../../Context/CartContext'
-import products from "../../utils/products.mock"
 
 const ItemDetail = ({dataItem}) =>{
     const [quantitySelected, setQuantitySelected] = useState (0)
     const {title,price,img,stock,description} = dataItem 
-    const {id}= useParams()
     const {addToCart} = useContext (CartContext)
     
 
@@ -22,7 +20,7 @@ const ItemDetail = ({dataItem}) =>{
             <p>{description}</p>
             {console.log(quantitySelected)}
             {
-                quantitySelected >= 1 ? <Link to="/cart"><button onClick={()=>{addToCart(products.id)}} className='botonTerminarCompra'>Terminar Compra</button></Link>: <ItemCount stock={stock}setQuantitySelected={setQuantitySelected}/>
+                quantitySelected >= 1 ? <Link to="/cart"><button onClick={()=>{addToCart({...dataItem, quantitySelected})}} className='botonTerminarCompra'>Terminar Compra</button></Link>:<ItemCount stock={stock}setQuantitySelected={setQuantitySelected}/>
             }
         </div> 
         </div>

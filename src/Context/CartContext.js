@@ -5,6 +5,7 @@ export const CartContext = createContext();
 const CartProvider = ({ children }) => {
     const [cart, setCart] = useState([]);
     const addToCart = (product) => {
+        console.log(product)
         const isProductInCart = cart.find((productInCart) => productInCart.id === product.id,);
         
         if (isProductInCart) {
@@ -12,7 +13,7 @@ const CartProvider = ({ children }) => {
             if (productInCart.id === product.id) {
                 return {
                     ...productInCart,
-                    count: productInCart.count + product.count,
+                    quantitySelected: productInCart.quantitySelected + product.quantitySelected,
                 };
             } else {
                 return productInCart;
@@ -31,8 +32,10 @@ const CartProvider = ({ children }) => {
         const newCart = cart.filter((product) => product.id !== id);
         setCart(newCart);
     };
+
+    const data = {cart, addToCart, clear, removeFromCart }
     return (
-    <CartContext.Provider value={{ cart, addToCart, clear, removeFromCart }}>
+    <CartContext.Provider value={data}>
         {children}
     </CartContext.Provider>
     );
