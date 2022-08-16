@@ -1,6 +1,11 @@
+
+import Cheackout from "../components/CheackOut/CheackOut"
 const Checkout = () => {
     return (
-        <h1>Pagina CheckOut</h1>
+        <div>
+            <h1>Pagina CheckOut</h1>
+            <Cheackout/>
+        </div>
     )
 }
 

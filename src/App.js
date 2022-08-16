@@ -7,6 +7,7 @@ import Checkout from './pages/Checkout';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
 import CartProvider from './Context/CartContext';
+import TerminaCompra from './pages/TerminaCompra';
 function App() {
   return (
     <CartProvider>
@@ -21,6 +22,7 @@ function App() {
           <Route path='/category/:category' element={<ItemListContainer/>}></Route>
           <Route path='/contact' element={<Contact/>}></Route>
           <Route path='/cart' element={<Checkout/>}></Route>
+          <Route path="/finalcompra" element={<TerminaCompra />} />
           <Route path='/items/:id' element={<ItemDetailContainer/>}></Route>
           <Route path='*' element= {<h1>Error 404 - Página no encontrada</h1>}></Route>
         </Routes>

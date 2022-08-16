@@ -22,7 +22,7 @@ const ItemListContainer = ({section, sale}) => {
                 }else
                 resolve (products)
             }
-        },2000)
+        },1)
     })
     useEffect(()=>{
     getProducts

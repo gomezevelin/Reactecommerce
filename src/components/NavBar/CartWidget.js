@@ -1,11 +1,12 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCartShopping} from '@fortawesome/free-solid-svg-icons' 
+
+import ShowCart from '../ShowCart/ShowCart'
 
 
-const CardWidget = () => {
+const CardWidget = ({contador}) => {
     return (
         <div>
-            <FontAwesomeIcon icon={faCartShopping}/>
+            
+            <ShowCart contador={contador}/>
         </div>
     )
 }
