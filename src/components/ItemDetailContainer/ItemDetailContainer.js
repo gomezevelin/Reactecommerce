@@ -12,7 +12,7 @@ const ItemDetailContainer = ({category}) =>{
         setTimeout(()=>{
             const productDetail = products.find (product => product.id === parseInt(id))
             resolve(productDetail)
-            },2000)
+            },1)
         })
         useEffect(()=>{
         getProducts(id)

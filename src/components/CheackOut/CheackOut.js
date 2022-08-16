@@ -2,7 +2,7 @@ import Table from "react-bootstrap/Table";
 import React, { useContext } from "react";
 import ItemListContainer from "../ItemListContainer/ItemListContainer";
 import "./CheackOut.scss";
-import { CartContext} from "../../Context/CartContext"
+import {CartContext} from "../../Context/CartContext"
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 
@@ -73,9 +73,7 @@ const Cheackout = () => {
                   </td>
                   <td>
                     <div className="contenedorCant">
-                      <button onClick={() => removeFromCart(p.id)}>
-                        <i className="fa-solid fa-trash-can fa-l"></i>
-                      </button>
+                      <button onClick={() => removeFromCart(p.id)}>x</button>
                     </div>
                   </td>
                 </tr>

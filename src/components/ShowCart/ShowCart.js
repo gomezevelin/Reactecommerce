@@ -63,8 +63,7 @@ function CartContainer() {
                     </div>
                     <div className="itemConPrec">
                         <div className="itemConDel">
-                            <button onClick={() => removeFromCart(p.id)}>
-                                <i className="itemDel fa-solid fa-trash-can fa-l"></i>
+                            <button onClick={() => removeFromCart(p.id)}>X
                             </button>
                         </div>
                     <div className="itemConCant">

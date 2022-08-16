@@ -1,6 +1,7 @@
 import './ItemCount.scss'
 import {useContext,useState} from 'react'
-import { CartContext } from '../../Context/CartContext'         
+import { CartContext } from '../../Context/CartContext'  
+import { Link } from 'react-router-dom'       
 
 const ItemCount = ({stock, dataItem}) => {
      const {addToCart} = useContext(CartContext)
@@ -22,7 +23,8 @@ const ItemCount = ({stock, dataItem}) => {
                <p>{count}</p>
                <button onClick={addProduct} disabled={disable}>+</button>
           </div>
-               <button className='botonAgregarCarrito' onClick={onAdd}>Agregar a carrito</button></>:<button>Terminar Compra</button>}
+               <button className='botonAgregarCarrito' onClick={onAdd}>Agregar a carrito</button></>:<><Link to='/cart'><button className='botonAgregarCarrito'>Terminar Compra</button></Link>
+               <Link to='/products'><button className='botonAgregarCarrito'>Seguir Comprando</button></Link></>}
           </div>
      )
 }         
