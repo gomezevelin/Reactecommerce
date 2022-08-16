@@ -12,8 +12,6 @@ const Cheackout = () => {
     <>
       <div className="container">
         <div className="mensajeCompra">
-          <i class="fa-regular fa-face-frown fa-7x"></i>
-          <p className="textoMensajeCompra">Ups..!!</p>
           <p className="textoMensajeCompra">
             El carrito esta vacio!, tal vez te interese chusmear algunos de
             estos productos, Quien sabe por ahí te copa alguno y terminas
@@ -27,8 +25,6 @@ const Cheackout = () => {
     <>
       <div className="container">
         <div className="mensajeCompra">
-          <i class="fa-regular fa-face-grin-tongue-wink fa-7x"></i>
-          <p className="textoMensajeCompra">Genial !!!</p>
           <p className="textoMensajeCompra">
             Es verdad, no podes comprar la felicidad, pero podes comprarte este
             carrito que te va a hacer muuuuy feliz!
@@ -81,20 +77,6 @@ const Cheackout = () => {
             })}
           </tbody>
           <tfoot className="tFooter">
-            <tr>
-              <td colSpan={2} className="derecha">
-                Total Carrito
-              </td>
-              <td className="derecha">${totalCarrito}</td>
-              <td></td>
-            </tr>
-            <tr>
-              <td colSpan={2} className="derecha">
-                Envío
-              </td>
-              <td className="derecha">$ {0}</td>
-              <td></td>
-            </tr>
             <tr>
               <td colSpan={2} className="derecha">
                 Total
