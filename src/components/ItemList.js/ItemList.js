@@ -1,6 +1,5 @@
 import ItemProduct from "../Item/Item"
-import { useContext } from "react"
-import { CartContext } from "../../Context/CartContext"
+
 
 const ItemList = ({dataProducts}) => {
 

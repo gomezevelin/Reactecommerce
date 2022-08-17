@@ -16,7 +16,7 @@ function CartContainer() {
     const handleShow = () => setShow(true);
     return (
     <>
-    <div onClick={handleShow}>
+    <div className='divShowCart' onClick={handleShow}>
         
         <FontAwesomeIcon icon={faCartShopping}/>
         {contador > 0 ? (
@@ -48,7 +48,7 @@ function CartContainer() {
                 return (
                 <div key={p.id} className="item">
                     <div className="itemImg">
-                    <img className="imagen" src={p.img} alt="ALGO" />
+                    <img className="imagen" src={`/assets/${p.img}`} alt="ALGO" />
                     </div>
                     <div className="itemConDesc">
                     <div className="itemDescText">

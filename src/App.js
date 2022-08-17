@@ -23,7 +23,7 @@ function App() {
           <Route path='/contact' element={<Contact/>}></Route>
           <Route path='/cart'  element={<Checkout/>}></Route>
           <Route path="/finalcompra" element={<TerminaCompra />} />
-          <Route path='/items/:id' element={<ItemDetailContainer/>}></Route>
+          <Route path='/:category/:id' element={<ItemDetailContainer/>}></Route>
           <Route path='*' element= {<h1>Error 404 - Página no encontrada</h1>}></Route>
         </Routes>
       </div>  

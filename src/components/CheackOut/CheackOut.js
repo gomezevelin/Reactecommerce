@@ -48,7 +48,7 @@ const Cheackout = () => {
                 <tr>
                   <td>
                     <div className="itemNc">
-                      <img className="itemImgC" src={p.img} alt="algo" />
+                      <img className="itemImgC" src={`/assets/${p.img}`} alt="algo" />
                       <div className="contenedorDescrip">
                         <p className="tituloDesc">{p.title}</p>
                         <p>{p.price}</p>
