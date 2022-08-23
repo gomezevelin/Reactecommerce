@@ -2,13 +2,13 @@
 import './ModalCart.scss'
 import CloseButton from 'react-bootstrap/CloseButton';
 
-const Modal = ({title, close, children}) => {
+const ModalCart = ({title, close, children}) => {
     return(
         <div className="modal-custom">
             <h2>{title}</h2>
-            <CloseButton  onClick={() => close(false)}/>
             {children}
+            <CloseButton  onClick={() => close(false)}/>
         </div>
     )
 }
-export default Modal
+export default ModalCart

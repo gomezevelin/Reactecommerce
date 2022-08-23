@@ -6,9 +6,8 @@ const CartProvider = ({ children }) => {
     const [cart, setCart] = useState([]);
     const [contador, setContador] = useState(0);
     const [totalCarrito, setTotalCarrito] = useState(0);
-
+    
     const addToCart = (product) => {
-        console.log(product)
         const isInCart = cart.find((productInCart) => productInCart.id === product.id,);
         
         if (isInCart) {

@@ -1,12 +1,10 @@
-
-import Cheackout from "../components/CheackOut/CheackOut"
+import Cart from "../components/Cart/Cart"
 const Checkout = () => {
     return (
         <div>
             <h1>Pagina CheckOut</h1>
-            <Cheackout/>
+            <Cart/>
         </div>
     )
 }
-
 export default Checkout

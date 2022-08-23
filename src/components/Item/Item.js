@@ -5,7 +5,6 @@ import {Link} from "react-router-dom"
 const ItemProduct = ({data}) => {
     
     const {id,title,price,img,category} = data
-    console.log(category)
     return(
         
         <div  key= {id} className='itemProduct'>
