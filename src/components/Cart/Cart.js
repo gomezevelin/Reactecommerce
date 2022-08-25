@@ -33,8 +33,6 @@ const Cart = () => {
     email:""
   })
 
-  
-
   const handleChange = (e) => {
     setFormData({...formData, [e.target.name]: e.target.value})
   }
@@ -75,7 +73,6 @@ const Cart = () => {
         </div>
         <div>
           <h5>Detalle del Carrito</h5>
-          {console.log("orden:", order)}
         </div>
         <Table striped hover>
           <thead>
@@ -164,11 +161,14 @@ const Cart = () => {
         <ModalCart title="Datos Usuario" close={() =>{setShowModal(false)}}>
           {success ?(
             <>
-            <h2>Su orden se generó correctamente</h2>
-            <p>Id de compra:  {success}</p>
+            <h2 className="titleOrder">Su orden se generó correctamente</h2>
+            <p className="idOrder">Id de compra:  {success}</p>
+            <Link to="/">
+            <button className="btnForm" onClick={() => clear()}>Volver al Home</button>
+            </Link>
             </>):(<>
-            <h1>Formulario</h1>
-            <form onSubmit={submitData}>
+            <h1 className="titleForm">Formulario</h1>
+            <form className="form" onSubmit={submitData}>
               <input 
                 type="text" 
                 name="name" 
@@ -190,7 +190,15 @@ const Cart = () => {
               onChange={handleChange}
               value={formData.email}>
             </input>
-            <button type="submit">Enviar</button>
+            <div className="divBtnForm">
+            <button type="submit" className="btnForm">Enviar</button>
+            <Link to={`/products`}>
+                  <button className="btnForm">
+                    Seguir Comprando
+                  </button>
+            </Link>
+            </div>
+            
             </form></>)
           }
           
