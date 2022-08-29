@@ -10,10 +10,7 @@ const Home = () => {
             <h1 className="titleHome">Deco Desing</h1>
             <img className="imgHome" src="./assets/decoHome.jpeg" alt="casa decoracion"></img>
             <p className="pHome">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure,
-                accusamus officia? Reiciendis doloribus, consequatur ratione provident
-                sed nihil incidunt qui aliquam veniam? Ab beatae maiores, vero saepe
-                nemo nostrum perspiciatis?
+                Productos de decoración exclusivos para toda tu casa.
             </p>
         </div>
         <div>

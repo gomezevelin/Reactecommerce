@@ -10,7 +10,7 @@ const NavBar1 = ()=>{
             <Link to="/"><img src='assets/logohome.png' className='logoNav' alt ='Logo'/></Link>
             <ul>
                 <Link to="/"><li><button>Home</button></li></Link>
-                <ButtonDrop className="btnProducts"/>
+                <ButtonDrop/>
                 <Link to="/contact"><li><button>Contacto</button></li></Link>
                 <li><button><CardWidget/></button></li>
             </ul>

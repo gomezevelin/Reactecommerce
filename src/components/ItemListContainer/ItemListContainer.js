@@ -39,7 +39,7 @@ const ItemListContainer = ({section, sale}) => {
     },[category])// eslint-disable-line react-hooks/exhaustive-deps
     
     return(
-        <div className='ContainerlistProducts'>
+        <div className='containerListProducts container' >
             <h1>{section}</h1> 
             <ItemList dataProducts={listProducts}/>
         </div>

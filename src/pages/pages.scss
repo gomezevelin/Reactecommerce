@@ -1,21 +1,85 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Marker+Hatch&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Lemonada&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap');
 .titleHome{
-    font-size: 84px;
+    font-size: 92px;
     text-align: right;
-    transform: rotate(90deg);
-    font-family: 'Rubik Marker Hatch', cursive;
+    transform: rotate(-16deg);
+    font-family: "Rubik Marker Hatch", cursive;
     position: absolute;
-    margin-left: 772px;
-    margin-top: 263px;
+    margin-left: 21rem;
+    margin-top: 54rem;
     color: #B78E80;
-}
-.imgHome{
-    border-radius: 5%;
-    margin-left: 2rem;
+    font-family: "Homemade Apple", cursive;
 }
 
-.pHome{
-    font-size: 25px;
-    margin-top: 2rem;
+
+.imgHome {
+    border-radius: 5%;
+    width: 90vw;
+}
+
+
+.pHome {
+    position: relative;
+    top: -52rem;
+    font-size: 40px;
+    left: 7rem;
+    width: 50%;
+    border-radius: 10%;
+    color: #3a0c0c;
+    font-weight: 900;
+    font-family: 'Lemonada', cursive;
+}
+
+//contact
+.titleContact{
+    font-family: 'Lemonada', cursive;
+    text-align: center;
+}
+.form-control {
+    display: block;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid rgba(87,81,81,0.14);
+    width: 100%;
+}
+.form-group{
+    width: 100%;
+}
+.list-unstyled{
+    list-style: none;
+}
+.btn-primary {
+    background-color: #fb9a8b;
+    color: #fff;
+    border-color: #fb9a8b;
+    font-size: 16px;
+    letter-spacing: 8px;
+    -webkit-box-shadow: inset 0 0 0 2px #fb9a8b;
+    -ms-box-shadow: inset 0 0 0 2px #fb9a8b;
+    -moz-box-shadow: inset 0 0 0 2px #fb9a8b;
+    -o-box-shadow: inset 0 0 0 2px #fb9a8b;
+    box-shadow: inset 0 0 0 2px #fb9a8b;
+    -webkit-transition: all 0.25s ease-in;
+    -ms-transition: all 0.25s ease-in;
+    -moz-transition: all 0.25s ease-in;
+    -o-transition: all 0.25s ease-in;
+    transition: all 0.25s ease-in;
+    display: block;
+    margin: 0 auto;
+    padding: 15px 20px 15px 20px;
+}
+
+.btn-primary:hover:not(.btn-transition){
+    background-color:#fff;
+    color:#fb9a8b;
+    border-color: #fb9a8b
+}
+.list-unstyled {
+    padding: 0;
+    margin: 1rem;
+    text-decoration: none;
+    color: #3a0c0c;
+    font-weight: 600;
 }

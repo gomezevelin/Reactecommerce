@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 function ButtonDrop() {
   return (
     
-    <Dropdown as={ButtonGroup}>
+    <Dropdown as={ButtonGroup} className="btn-react" size="small">
       <Link to= "/products"><Button variant="dark">Productos</Button></Link>
 
       <Dropdown.Toggle split variant="dark" id="dropdown-split-basic" />
