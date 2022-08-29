@@ -20,7 +20,7 @@ function CartContainer() {
         
         <FontAwesomeIcon icon={faCartShopping}/>
         {contador > 0 ? (
-        <Badge bg="secondary">{contador}</Badge>
+        <Badge bg="secondary" className="count">{contador}</Badge>
         ) : (
         ""
         )}
