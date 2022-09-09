@@ -19,14 +19,16 @@ const ItemCount = ({stock, dataItem}) => {
                {!terminarCompra ?
                <>
                <div className='itemCount'>
-               <button onClick={removeProduct} disabled={disable}>-</button>
-               <p>{count}</p>
-               <button onClick={addProduct} disabled={disable}>+</button>
-          </div>
-               <button className='botonAgregarCarrito' onClick={onAdd}>Agregar a carrito</button></>:<><Link to='/cart'><button className='botonAgregarCarrito'>Terminar Compra</button></Link>
-               <Link to='/products'><button className='botonAgregarCarrito'>Seguir Comprando</button></Link></>}
+                    <p>Seleccione la cantidad</p>
+                    <div className='div-btn-count'>
+                         <button className='btn-count' onClick={removeProduct} disabled={disable}><span className='spanCountRest'>-</span></button>
+                         <p className='pCount'>{count}</p>
+                         <button className='btn-count' onClick={addProduct} disabled={disable}><span className='spanCountAdd'>+</span></button>
+                    </div>
+               </div>
+               <button className='botonAgregarCarrito' onClick={onAdd}>Agregar a carrito</button>
+               </>:<><Link to='/products' className='linkCount'><button className='botonAgregarCarrito'>Seguir Comprando</button></Link><Link to='/cart' className='linkCount'><button className='botonAgregarCarrito'>Terminar Compra</button></Link></>}
           </div>
      )
 }         
-
 export default ItemCount

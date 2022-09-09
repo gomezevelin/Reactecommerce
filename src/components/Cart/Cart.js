@@ -1,62 +1,20 @@
 import Table from "react-bootstrap/Table";
-import React, { useContext, useState } from "react";
+import React, { useContext} from "react";
 import ItemListContainer from "../ItemListContainer/ItemListContainer";
 import "./Cart.scss";
 import {CartContext} from "../../Context/CartContext"
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
-import ModalCart from "../Modals/ModalCart"
-import db from "../../utils/firebaseConfig";
-import { collection, addDoc } from "firebase/firestore";
-
 
 const Cart = () => {
   const {contador, totalCarrito, cart, clear, removeFromCart } = useContext(CartContext);
-  const [showModal,setShowModal]= useState(false)
-  const [success, setSuccess] = useState()
-  const [order, setOrder] = useState({
-    items: cart.map((p)=>{
-      return{
-        id:p.id,
-        title:p.title,
-        price:p.price,
-        cant: p.quantitySelected 
-      }
-    } ),
-    buyer: {},
-    date: new Date().toLocaleString(),
-    total: totalCarrito
-  })
-  const [formData,setFormData]= useState({
-    name:"",
-    phone:"",
-    email:""
-  })
-
-  const handleChange = (e) => {
-    setFormData({...formData, [e.target.name]: e.target.value})
-  }
-
-  const submitData = (e) =>{
-    e.preventDefault ()
-    pushData({...order, buyer: formData})
-  }
-
-  const pushData = async (newOrder) => {
-    const collectionOrder = collection(db, 'ordenes')
-    const orderDoc = await addDoc(collectionOrder, newOrder)
-    setSuccess(orderDoc.id)
-    console.log('ORDEN GENERADA', orderDoc)
-  }
 
   return contador === 0 ? (
     <>
       <div className="container">
         <div className="mensajeCompra">
           <p className="textoMensajeCompra">
-            El carrito esta vacio!, tal vez te interese chusmear algunos de
-            estos productos, Quien sabe por ahí te copa alguno y terminas
-            disfrutando como loco!
+            El carrito esta vacio... te dejamos aca abajo la lista de todos los productos para que elijas los que más te gusten!
           </p>
         </div>
       </div>
@@ -67,8 +25,7 @@ const Cart = () => {
       <div className="container">
         <div className="mensajeCompra">
           <p className="textoMensajeCompra">
-            Es verdad, no podes comprar la felicidad, pero podes comprarte este
-            carrito que te va a hacer muuuuy feliz!
+            Muchas gracias por confiar en nosotros! Esperamos hacer de tu hogar, tu lugar favorito en el mundo!
           </p>
         </div>
         <div>
@@ -77,7 +34,7 @@ const Cart = () => {
         <Table striped hover>
           <thead>
             <tr>
-              <th>Articulo</th>
+              <th></th>
               <th>Cantidad</th>
               <th>Importe</th>
               <th>Eliminar</th>
@@ -92,7 +49,7 @@ const Cart = () => {
                       <img className="itemImgC" src={`/assets/${p.img}`} alt="algo" />
                       <div className="contenedorDescrip">
                         <p className="tituloDesc">{p.title}</p>
-                        <p>{p.price}</p>
+                        <p>Precio por unidad: ${p.price}</p>
                       </div>
                     </div>
                   </td>
@@ -103,14 +60,14 @@ const Cart = () => {
                   </td>
                   <td>
                     <div className="contenedorImporte">
-                      <p className="tituloImporte">
+                      <p className="tituloImporte">$
                         {parseInt(p.quantitySelected) * parseFloat(p.price)}
                       </p>
                     </div>
                   </td>
                   <td>
                     <div className="contenedorCant">
-                      <button onClick={() => removeFromCart(p.id)}>x</button>
+                      <button className="btn-trush" onClick={() => removeFromCart(p.id)}>x</button>
                     </div>
                   </td>
                 </tr>
@@ -119,10 +76,10 @@ const Cart = () => {
           </tbody>
           <tfoot className="tFooter">
             <tr>
-              <td colSpan={2} className="derecha">
+              <td colSpan={2} className="total">
                 Total
               </td>
-              <td className="derecha">${totalCarrito}</td>
+              <td className="total">${totalCarrito}</td>
               <td></td>
             </tr>
             <tr>
@@ -144,68 +101,20 @@ const Cart = () => {
                 </Link>
               </td>
               <td>
+              <Link to={`/finalcompra`}>
                   <Button
-                    onClick={()=> setShowModal(true)}
                     className="buttonSize"
                     variant="dark"
                   >
-                  Ir a Pagar
+                    Terminar Compra
                   </Button>
+                </Link>
               </td>
             </tr>
           </tfoot>
         </Table>
         
       </div>
-      {showModal &&
-        <ModalCart title="Datos Usuario" close={() =>{setShowModal(false)}}>
-          {success ?(
-            <>
-            <h2 className="titleOrder">Su orden se generó correctamente</h2>
-            <p className="idOrder">Id de compra:  {success}</p>
-            <Link to="/">
-            <button className="btnForm" onClick={() => clear()}>Volver al Home</button>
-            </Link>
-            </>):(<>
-            <h1 className="titleForm">Formulario</h1>
-            <form className="form" onSubmit={submitData}>
-              <input 
-                type="text" 
-                name="name" 
-                placeholder="Ingrese su nombre" 
-                onChange={handleChange}
-                value={formData.name}>
-              </input>
-              <input 
-                type="number" 
-                name="phone" 
-                placeholder="Ingrese su teléfono" 
-                onChange={handleChange}
-                value={formData.phone}>
-              </input>
-            <input 
-              type="email" 
-              name="email" 
-              placeholder="Ingrese su email" 
-              onChange={handleChange}
-              value={formData.email}>
-            </input>
-            <div className="divBtnForm">
-            <button type="submit" className="btnForm">Enviar</button>
-            <Link to={`/products`}>
-                  <button className="btnForm">
-                    Seguir Comprando
-                  </button>
-            </Link>
-            </div>
-            
-            </form></>)
-          }
-          
-      </ModalCart>
-      }
-      
-      
     </>
   );
 };

@@ -12,13 +12,14 @@
     color: #B78E80;
     font-family: "Homemade Apple", cursive;
 }
-
+.sectionHome{
+    margin-left: 3rem;
+}
 
 .imgHome {
     border-radius: 5%;
     width: 90vw;
 }
-
 
 .pHome {
     position: relative;
@@ -41,40 +42,37 @@
     display: block;
     padding: 12px;
     font-size: 16px;
-    border: 1px solid rgba(87,81,81,0.14);
+    border: 1px solid #B78E80;
     width: 100%;
+    background-color: #F5EEE8;
 }
 .form-group{
     width: 100%;
+    
 }
 .list-unstyled{
     list-style: none;
 }
+.list-unstyled:hover{
+    color: #B78E80;
+}
 .btn-primary {
-    background-color: #fb9a8b;
+    background-color:#B78E80;
     color: #fff;
-    border-color: #fb9a8b;
+    border-color:#B78E80;
     font-size: 16px;
-    letter-spacing: 8px;
-    -webkit-box-shadow: inset 0 0 0 2px #fb9a8b;
-    -ms-box-shadow: inset 0 0 0 2px #fb9a8b;
-    -moz-box-shadow: inset 0 0 0 2px #fb9a8b;
-    -o-box-shadow: inset 0 0 0 2px #fb9a8b;
-    box-shadow: inset 0 0 0 2px #fb9a8b;
-    -webkit-transition: all 0.25s ease-in;
-    -ms-transition: all 0.25s ease-in;
-    -moz-transition: all 0.25s ease-in;
-    -o-transition: all 0.25s ease-in;
+    letter-spacing: 7px;
     transition: all 0.25s ease-in;
     display: block;
     margin: 0 auto;
     padding: 15px 20px 15px 20px;
+    width: 200px;
 }
 
 .btn-primary:hover:not(.btn-transition){
     background-color:#fff;
-    color:#fb9a8b;
-    border-color: #fb9a8b
+    color:#B78E80;
+    border-color: #B78E80
 }
 .list-unstyled {
     padding: 0;
@@ -82,4 +80,31 @@
     text-decoration: none;
     color: #3a0c0c;
     font-weight: 600;
+}
+
+//Terminar Compra
+.botonesCompra{
+    display: flex;
+    gap: 15px;
+}
+.buttonComp{
+    background-color:#B78E80;
+    color: #fff;
+    border-color:#B78E80;
+    font-size: 16px;
+    letter-spacing: 7px;
+    transition: all 0.25s ease-in;
+    display: block;
+    margin: 0 auto;
+    padding: 15px 20px 15px 20px;
+}
+
+.buttonComp:hover{
+    background-color:#fff;
+    color:#B78E80;
+    border-color: #B78E80
+}
+
+.buttonSize{
+    width: 180px;
 }

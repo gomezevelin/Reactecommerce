@@ -19,7 +19,6 @@
             margin-left: 2rem;
     
             .itemDetailImg{
-                width: 80%;
                 height: 100%;
             }
         }
@@ -27,7 +26,7 @@
 }
 
 .spanDetailPrice{
-    font-size: 30px;
+    font-size: 50px;
     font-weight: 700;
     color: #B78E80;
 }
@@ -39,4 +38,40 @@
     padding: 0.5rem;
     color: #F5EEE8;
     border-width: 0px;
+}
+
+.titleItem{
+    font-family:'Lemonada', cursive;
+    font-size: 55px;
+}
+.subtitleItem{
+    font-family: 'Lemonada', cursive;
+    font-weight: 700;
+    text-decoration: underline;
+    margin-bottom: 2rem;
+    margin-top: 3rem;
+}
+.pIcon{
+    margin-top: 10px;
+}
+.btn-mas{
+    border:none;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 3px;
+    transition: all 0.25s ease-in;
+    display: block;
+    margin: 0 auto;
+    margin-top: 1rem;
+    border-radius: 4%;
+    background-color: #F5EEE8;
+    color: #BC8F8F;
+}
+
+.btn-mas:hover{
+    background-color:#fff;
+    color:#BC8F8F;
+    border-color: #BC8F8F;
+    border: solid 2px;
+    padding: 10px 15px;
 }

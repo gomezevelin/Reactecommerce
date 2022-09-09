@@ -8,6 +8,7 @@ import ItemListContainer from './components/ItemListContainer/ItemListContainer'
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
 import CartProvider from './Context/CartContext';
 import TerminaCompra from './pages/TerminaCompra';
+import Footer from './components/Footter/Footer';
 function App() {
   return (
     <CartProvider>
@@ -15,7 +16,7 @@ function App() {
       <div className="divNav">
         <NavBar1/>
       </div>
-      <div id='mainContainer'>
+      <div id='mainContainer '>
       <Routes>
           <Route path='/' element={<Home/>}></Route>
           <Route path='/products' element={<ItemListContainer section="Todos los Productos"/>}></Route>
@@ -26,8 +27,10 @@ function App() {
           <Route path='/:category/:id' element={<ItemDetailContainer/>}></Route>
           <Route path='*' element= {<h1>Error 404 - Página no encontrada</h1>}></Route>
         </Routes>
-      </div>  
+      </div> 
+      <Footer/> 
     </BrowserRouter>
+    
     </CartProvider>
   );
 }

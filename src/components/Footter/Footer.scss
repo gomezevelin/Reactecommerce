@@ -1,0 +1,29 @@
+.footer {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+    margin-top: 2rem;
+}
+.logoFot{
+    width: 300px;
+    height: 100px;
+    margin-left: 6px;
+}
+.redes{
+    display: flex;
+    flex-direction: row;
+    column-gap: 15px;
+    justify-content:flex-end;
+}
+.iconFooter{
+    font-size: 35px;
+    color: #B78E80;
+}
+.divIcon{
+    display: flex;
+    gap: 5rem;
+    padding: 15px;
+    margin-right: 4.5rem;
+}

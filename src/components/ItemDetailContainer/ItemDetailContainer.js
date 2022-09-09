@@ -15,7 +15,7 @@ const ItemDetailContainer = ({category}) =>{
         .then(res=>setListDetail({id: res.id, ...res.data()}))
     },[id])
         return (
-                <div className="containerItemDetail">
+                <div className="container containerItemDetail">
                     <h1>{category}</h1> 
                     {Object.keys(listDetail).length > 0 && <ItemDetail dataItem={listDetail}/>}
                     {Object.keys(listDetail).length === 0  && <Spiner/>}

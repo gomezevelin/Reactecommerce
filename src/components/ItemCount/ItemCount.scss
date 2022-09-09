@@ -1,36 +1,83 @@
 .itemCount{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     align-items: center;
     gap: 1rem;
     font-size: 25px;
-    
-
-    button{
-        height: 40px;
-        background-color: #BC8F8F;
-        border-style:none ;
-        -webkit-box-shadow: 6px 6px 23px -6px rgba(188,143,143,0.75);
-        -moz-box-shadow: 6px 6px 23px -6px rgba(188,143,143,0.75);
-        box-shadow: 6px 6px 23px -6px rgba(188,143,143,0.75);
-        font-size: 20px;
-        padding: 0.5rem;
-        color: #F5EEE8;
-    }
+    margin-top: 3rem;
 }
-.botonAgregarCarrito{
+.div-btn-count{
+    display: flex;
+}
+.btn-count{
+    height: 40px;
     background-color: #BC8F8F;
-    -webkit-box-shadow: 6px 6px 23px -6px rgba(188,143,143,0.75);
-    -moz-box-shadow: 6px 6px 23px -6px rgba(188,143,143,0.75);
-    box-shadow: 6px 6px 23px -6px rgba(188,143,143,0.75);
-    margin-left: 2rem;
+    border-style:none ;
     font-size: 20px;
     padding: 0.5rem;
     color: #F5EEE8;
-    border-width: 0px;
-    margin-top: 0.5rem;
+    transition: all 0.25s ease-in;
+    border-color: #BC8F8F;
+    border-radius: 50%;
+    flex: 0 0 30px;
+    height: 30px;
+    width: 30px;
+    padding: 0.7rem;
+    position: relative;
+    margin-right: 4rem;
+    margin-left: 4rem;
 
+}
+.btn-count:hover{
+    background-color:#fff;
+    color:#fb9a8b;
+    border-color: #BC8F8F;
+    border: solid 2px;
+}
+.spanCountAdd{
+    position: absolute;
+    top: -1.1rem;
+    right: 1px;
+    font-size: 50px;
+
+}
+.spanCountRest{
+    position: absolute;
+    top: -1.1rem;
+    left: 0.3rem;
+    font-size: 50px;
+
+}
+.pCount{
+    font-weight: 900;
+}
+.botonAgregarCarrito {
+    background-color: #BC8F8F;
+    color: #F5EEE8;
+    border-color: #BC8F8F;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 5px;
+    transition: all 0.25s ease-in;
+    display: block;
+    margin: 0 auto;
+    margin-top: 1rem;
+    padding: 15px 20px 15px 20px;
+    border-radius: 4%;
+
+        a{
+            text-decoration: none;
+        }
+    
+}
+
+.botonAgregarCarrito:hover:not(.btn-transition){
+    background-color:#fff;
+    color:#BC8F8F;
+    border-color: #BC8F8F;
+    border: solid 2px;
 }
 .divItemCount{
     display: flex;

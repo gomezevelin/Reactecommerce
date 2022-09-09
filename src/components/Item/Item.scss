@@ -1,9 +1,19 @@
 .cartLink{
     text-decoration: none;
     color: black;
-    .cartLink:active{
-        color: aqua;
-    }
+}
+.cartLink:hover{
+    color: #BC8F8F;
+}
+.btn-VerMas{
+        margin-top: 10px;
+        padding: 5px;
+        background-color: #E1CCC7;
+        border: solid 1px #E1CCC7;
+}
+.btn-VerMas:hover{
+    color: #F5EEE8;
+    background-color:#B78E80;
 }
 .itemProduct{
     width: 250px;
@@ -29,11 +39,5 @@
     }
     .imgProduct{
         width: 100%;
-    }
-    button{
-        margin-top: 10px;
-        padding: 5px;
-        background-color: #E1CCC7;
-        border: solid 1px #E1CCC7;
     }
 }
