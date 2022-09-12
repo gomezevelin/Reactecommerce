@@ -8,7 +8,7 @@ const CartProvider = ({ children }) => {
     const [totalCarrito, setTotalCarrito] = useState(0);
     
     const addToCart = (product) => {
-        const isInCart = cart.find((productInCart) => productInCart.id === product.id,);
+        const isInCart = cart.find((productInCart) => productInCart.id === product.id);
         
         if (isInCart) {
             const newArray = cart.map((productInCart) => {
@@ -25,7 +25,8 @@ const CartProvider = ({ children }) => {
             } else {
             setCart([...cart, product]);
             }
-            setContador (contador+product.quantitySelected);
+            setContador (contador + product.quantitySelected);
+            console.log("contador en cart context", contador, product.quantitySelected)
             setTotalCarrito(totalCarrito + parseInt(product.quantitySelected)*parseFloat(product.price)
             );
         };
@@ -34,7 +35,6 @@ const CartProvider = ({ children }) => {
     setContador(0);
     setTotalCarrito(0);
     };
-
     const removeFromCart = (id) => {
         const prod = cart.find((product) => product.id === id);
         setTotalCarrito(
@@ -48,6 +48,7 @@ const CartProvider = ({ children }) => {
     return (
     <CartContext.Provider value={{contador, totalCarrito, cart, addToCart, clear, removeFromCart }}>
         {children}
+        {console.log ("cartcontext return",contador)}
     </CartContext.Provider>
     );
 };

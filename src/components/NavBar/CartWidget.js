@@ -6,6 +6,7 @@ const CardWidget = ({contador}) => {
     return (
         <div className='divCartWidget'>
             <ShowCart contador={contador}/>
+            {console.log("carwidget count",contador)}
         </div>
     )
 }

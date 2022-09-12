@@ -8,6 +8,7 @@ import { Link } from "react-router-dom";
 
 const Cart = () => {
   const {contador, totalCarrito, cart, clear, removeFromCart } = useContext(CartContext);
+  console.log("contador en cart",contador)
 
   return contador === 0 ? (
     <>

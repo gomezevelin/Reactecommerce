@@ -10,8 +10,8 @@ import { faCartShopping} from '@fortawesome/free-solid-svg-icons'
 
 function CartContainer() {
     const [show, setShow] = useState(false);
-    //const [ultimaCategoria, setUltimaCategoria] = useState("");
     const { contador, totalCarrito, removeFromCart, cart, clear } = useContext(CartContext);
+    console.log("contador car context",contador)
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
     return (
@@ -109,6 +109,7 @@ function CartContainer() {
 }
 
 function ShowCart({ contador }) {
+    console.log("contador showcart", contador)
     return (
     <>
         <CartContainer contador={contador} />

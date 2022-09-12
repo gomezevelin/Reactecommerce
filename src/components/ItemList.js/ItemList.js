@@ -1,6 +1,5 @@
 import ItemProduct from "../Item/Item"
 
-
 const ItemList = ({dataProducts}) => {
 
     return(
