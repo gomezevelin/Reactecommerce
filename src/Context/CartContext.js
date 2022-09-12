@@ -40,7 +40,7 @@ const CartProvider = ({ children }) => {
         setTotalCarrito(
           totalCarrito - parseInt(prod.quantitySelected) * parseFloat(prod.price)
         );
-        setContador(contador - prod.cantidad);
+        setContador(contador - prod.quantitySelected);
         const newCart = cart.filter((product) => product.id !== id);
         setCart(newCart);
     };
