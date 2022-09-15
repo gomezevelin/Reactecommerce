@@ -16,13 +16,15 @@ Se inicia con
 `npm run build`
 
 ## Dependencias
-
+Se utiliza Firebase para guardar los datos de la compra
 Se utilizan todas las dependecias utilizadas en clase.
 Se agrega Favicon y Bootstrap React.
 Para instalarlos se corrieron los siguientes comandos:
 
 `npm i favicons`
 `npm install react-bootstrap bootstrap`
+`npm i react icons`
+
 
 Además se agregó en index.css para incorporar los estilos
 
