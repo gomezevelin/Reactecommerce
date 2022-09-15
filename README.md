@@ -12,6 +12,8 @@ Disponible solo de forma local a través de clonación de repositorio.
 Se inicia con 
 
 `npm start`
+`npm install`
+`npm run build`
 
 ## Dependencias
 
