@@ -9,40 +9,7 @@ const ItemListContainer = ({section, sale}) => {
     
     const [listProducts, setListProducts] = useState([])
     const {category} = useParams()
-    /*
-    const filterBySale = products.filter(product => product.sale === true)
 
-    const getProducts = new Promise((resolve,reject)=>{
-        setTimeout(()=>{
-            if (category){
-                resolve(filterByCategory)
-            }else{ 
-                if (sale){
-                    resolve(filterBySale)
-                    //filtrar productos por sale
-                }else
-                resolve (products)
-            }
-        },1)
-    })
-    
-    const traeProductos = async() =>{
-        const productCollection = collection(db, 'productos')
-        let prodFil
-        if (section===""){
-            prodFil=productCollection
-        }else{
-            const q = query (productCollection, where("categoria","==", filtro))
-            prodFil=q
-        }    
-        const productSnapshot = await getDocs(prodFil)
-        const productList = productSnapshot.docs.map( (doc) => {
-            let product = doc.data()
-            product.id = doc.id
-            return product
-        })
-        return productList
-      }*/
     useEffect(()=>{
         const queryCollection = collection(db,"products")
         if (category){

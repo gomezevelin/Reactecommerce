@@ -55,20 +55,22 @@ function CartContainer() {
                         <p className="itemDesc">{p.title}</p>
                     </div>
                     <div className="itemDescWidget">
-                        <p className="itemDesc">{p.quantitySelected}</p>
+                        <p className="itemDesc">Cantidad: {p.quantitySelected}</p>
                     </div>
                     <div className="itemDescWidget">
-                        <p className="itemDesc">{p.price}</p>
+                        <p className="itemDesc">Precio por unidad: ${p.price}</p>
                     </div>
                     </div>
                     <div className="itemConPrec">
                         <div className="itemConDel">
-                            <button onClick={() => removeFromCart(p.id)}>X
+                            <button  
+                            className="btn-trush2"
+                            onClick={() => removeFromCart(p.id)}>X
                             </button>
                         </div>
                     <div className="itemConCant">
                         <p className="itemCant">
-                            {parseInt(p.quantitySelected) * parseFloat(p.price)}
+                         ${parseInt(p.quantitySelected) * parseFloat(p.price)}
                         </p>
                     </div>
                 </div>
